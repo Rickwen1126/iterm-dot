@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+session="${1:-work}"
+
+case "$session" in
+  work)
+    red=214
+    green=64
+    blue=69
+    ;;
+  work2)
+    red=242
+    green=153
+    blue=74
+    ;;
+  work3)
+    red=109
+    green=170
+    blue=92
+    ;;
+  work4)
+    red=72
+    green=145
+    blue=201
+    ;;
+  work5)
+    red=142
+    green=108
+    blue=186
+    ;;
+  work6)
+    red=104
+    green=114
+    blue=124
+    ;;
+  *)
+    red=96
+    green=96
+    blue=96
+    ;;
+esac
+
+printf '\033]6;1;bg;red;brightness;%s\a' "$red"
+printf '\033]6;1;bg;green;brightness;%s\a' "$green"
+printf '\033]6;1;bg;blue;brightness;%s\a' "$blue"
+
+exec ssh -t workmac "/bin/zsh -lc 'if tmux has-session -t \"$session\" 2>/dev/null; then exec tmux attach -t \"$session\"; else echo \"tmux session $session not found\"; exec /bin/zsh -l; fi'"

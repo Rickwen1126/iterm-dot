@@ -1,0 +1,46 @@
+{
+  "Profiles": [
+    {
+      "Name": "work1",
+      "Guid": "workmac-work1",
+      "Dynamic Profile Parent Name": "Default",
+      "Custom Command": "Yes",
+      "Command": "/Users/rickwen/bin/iterm-workmac-session work"
+    },
+    {
+      "Name": "work2",
+      "Guid": "workmac-work2",
+      "Dynamic Profile Parent Name": "Default",
+      "Custom Command": "Yes",
+      "Command": "/Users/rickwen/bin/iterm-workmac-session work2"
+    },
+    {
+      "Name": "work3",
+      "Guid": "workmac-work3",
+      "Dynamic Profile Parent Name": "Default",
+      "Custom Command": "Yes",
+      "Command": "/Users/rickwen/bin/iterm-workmac-session work3"
+    },
+    {
+      "Name": "work4",
+      "Guid": "workmac-work4",
+      "Dynamic Profile Parent Name": "Default",
+      "Custom Command": "Yes",
+      "Command": "/Users/rickwen/bin/iterm-workmac-session work4"
+    },
+    {
+      "Name": "work5",
+      "Guid": "workmac-work5",
+      "Dynamic Profile Parent Name": "Default",
+      "Custom Command": "Yes",
+      "Command": "/Users/rickwen/bin/iterm-workmac-session work5"
+    },
+    {
+      "Name": "work6",
+      "Guid": "workmac-work6",
+      "Dynamic Profile Parent Name": "Default",
+      "Custom Command": "Yes",
+      "Command": "/Users/rickwen/bin/iterm-workmac-session work6"
+    }
+  ]
+}

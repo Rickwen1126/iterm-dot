@@ -1,0 +1,5 @@
+Host workmac
+  HostName 100.112.227.109
+  User rickwen
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
